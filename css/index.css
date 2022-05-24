@@ -9,8 +9,8 @@ html {
 
 body {
     display: grid ; /*aplico grid para que header y footer siempre estén pegados al body*/
-    grid-template-rows: auto 1fr auto; /*aplico grid para que header y footer siempre estén pegados al body*/
-    min-height: 100vh; /*aplico grid para que header y footer siempre estén pegados al body*/
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
     margin: 0;
     background: #C9FFBF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,11 +19,16 @@ body {
 
     
 }
+
+
+
 /*Estilos Header*/
 
-header {
+@media (min-width: 560px){
+
+    header {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -31,6 +36,16 @@ header {
     font-size: 1.5em;
         
 }
+
+main section{ 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center ;
+
+}
+
+
+} 
 
 nav{
     width: 50%;
@@ -42,8 +57,6 @@ nav{
     justify-content: space-around;
     font-style:normal;
 
-    
-    
 }
 
 li {
@@ -59,7 +72,15 @@ li a:hover{
     color: rgb(231, 12, 121);
 }
 
-/*títulos*/
+/*Index section, títulos*/
+
+main section{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start ;
+
+}
+
 section h1{
     color: rgb(231, 12, 121);
     font-size: 5em;
@@ -67,6 +88,7 @@ section h1{
 }
 
 section h2 {
+    display: flex;
     color: rgb(231, 12, 121);
     font-size: 3em;
     
@@ -162,97 +184,74 @@ section article{
 
 /*Grid*/
 
-.grid-area{
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+
+}
+.contenedor-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(3, 50rem);
-    gap: 1.5rem;
-    
-    
-   
-    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-auto-rows: minmax(200px, auto) ;
+    gap: 5px;
+    padding: 15px;
+    grid-auto-flow: dense;
+
+}
+/*aplico media querie a gallery*/
+@media (min-width: 480px) {
+
+    /*configuro los espacios que van a ocupar cada imagen ancho/alto*/
+.wide {
+    grid-column: span 3; /*dos columnas de ancho*/
 }
 
-section#foto1 {
-    grid-column: 1/3;
-    grid-row: 1;
-    background-image: url(../img/Grid/tresburgas.png);
-    background-size: cover;
-    justify-items: center;
-    
-  
+.tall{
+    grid-row: span 4;/*tres columnas de alto*/
 }
 
-section#foto2 {
-    
-    grid-column: 3/5;
-    grid-row: 1;
-    background-image: url(../img/Grid/cheff.png);
-    background-size: cover;
-    justify-items: center;
-    
 }
 
-section#foto3 {
-    
-    grid-column: 1/2;
-    grid-row: 2;
-    background-image: url(../img/Grid/vasococa2.png);
-    background-size: cover;
-    justify-items: center;
-    
-   
-}
 
-section#foto4 {
-    
-    grid-column: 2/4;
-    grid-row: 2;
-    background-image: url(../img/Grid/lluviadepapas.png);
-    background-size: cover;
-    justify-items: center;
-    
-}
+/*Aplico @media queries header y articles
 
-section#foto5 {
-    
-    grid-column: 3/5;
-    grid-row: 2/4;
-    background-image: url(../img/Grid/Hamburguesa\ aside.png);
-    background-size: cover;
-    justify-items: center;
-    
-}
-
-section#foto6 {
-    
-    grid-column: 1/3;
-    grid-row: 3;
-    background-image: url(../img/Grid/burga.png);
-    background-size: cover;
-    justify-items: center;
-    
-    
-}
-
-/*Aplico @media queries*/
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     header {
-        flex-direction:column;
+        flex-flow: column wrap;
         align-items: flex-start;
         
     }
-    main{ 
-        flex
+
+    body{
+        display: flex;
+        flex-flow: column wrap;
+        align-items:stretch;
+        
+        
+
     }
+    
     
     article {
        flex-direction: column;
 
     }
 
-}
+}*/
 
 
 
