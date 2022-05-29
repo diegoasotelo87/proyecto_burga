@@ -12,9 +12,12 @@ body {
     grid-template-rows: auto 1fr auto; 
     min-height: 100vh; 
     margin: 0;
-    background: #C9FFBF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*Aplico Gradiente al Body*/
+    background: #dd5e89; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd5e89, #f7bb97); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd5e89, #f7bb97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
 
 
     
@@ -86,6 +89,8 @@ section h1{
     font-size: 5em;
     text-align: center; 
 }
+
+
 
 section h2 {
     display: flex;
@@ -252,6 +257,12 @@ section article{
     }
 
 }*/
+  /*Aplico Animacion en seccion CUPONES*/
+.animacionImg {
+    margin: 0 auto;
+    transform: scale(.8);
+    }
 
-
-
+.animacionImg:hover{
+    transform: scale(1);
+}
