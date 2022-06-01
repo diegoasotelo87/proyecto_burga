@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/index.css">
+    <!--Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body> 
     <!--INICIO HEADER DE LA PAGINA-->
     <header>
         <a href="../index.html"><img src="../img/Logo.svg" alt="Logo Burga" width="150px"> </a>
         <nav>
+            
             <ul class="listaNav">
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./novedades.html">Novedades</a></li>
@@ -25,59 +28,93 @@
             </ul>
         </nav>
     </header> 
- <!--FIN HEADER DE LA PAGINA-->
-       <main>
-            <section>
-                <table class="formatoTabla" border="" cellpadding="0px" cellspacing="0px">
-                    <thead>
-                        <tr class="color">
-                            <th>N°</th>
-                            <th>Combo</th>
-                            <th>Precio</th>                
-                        </tr>
-                    </thead>
-                    <tr class="color">
-                        <td> 1 </td>
-                        <td>Burga Cheese</td>
-                        <td>$950</td>
-                    <tr class="color">
-                        <td> 2 </td>
-                        <td>Burga Bacon</td>
-                        <td>$950</td>
-                    </tr>
-                    <tr class="color">
-                        <td> 3 </td>
-                        <td> 3 Burga Clasic</td>
-                        <td>$950</td>
-                    </tr>
-                </table>
+       <!--FIN HEADER DE LA PAGINA-->
+       <main class="container">
+            <h2>Nuestras Reinas</h2>
 
-            </section>
-        
             <section>
-                <form class="formatoForm" style="margin: 100px ; width: 600px;" action="./index.js" method="get">
-                    <input type="text" name=" Nombre" placeholder=" Nombre" required>
-                    <br>
-                    <input type="text" name=" Apellido" placeholder=" Apellido" required>
-                    <br>
-                    <input type="text" name=" Direccion" placeholder=" Direccion" required>
-                    <br>
-                    <lavel for="menu"> Elegir menú:</lavel>
-            
-                    <select id="menu" name="menu">
-                        <option value="menu 1"> Menú 1</option>
-                        <option value="menu 2"> Menú 2</option>
-                        <option value="menu 3"> Menú 3</option>
-                    </select>
-                    <br>
-                    <lavel for="Cantidad"> Cantidad:</lavel>
-                    <input type="text" >
-                    <br>
-                    <lavel for="Enviar pedido"> Enviar pedido</lavel>
-                    <input type="submit" value="Enviar pedido">
-                </form>
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/ClassicQueen.png" class="card-img-top" alt="Classic Queen">
+                    <div class="card-body">
+                      <h5 class="card-title">Classic Queen</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/MonsterQueen.png" class="card-img-top" alt="Monster Queen">
+                    <div class="card-body">
+                      <h5 class="card-title">Monster Queen</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/PolloQueen.png" class="card-img-top" alt="Pollo Queen">
+                    <div class="card-body">
+                      <h5 class="card-title">Pollo Queen</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/BurgaQueenVegeta.png" class="card-img-top" alt="Queen Vegeta">
+                    <div class="card-body">
+                      <h5 class="card-title">Queen Vegeta</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
             </section>
-       </main>
+
+            <h2>Acompañalas</h2>
+
+            <section>
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/NuggetsQuuen.png" class="card-img-top" alt="combo classic">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo classic</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/PapasQueen.png" class="card-img-top" alt="combo classic">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo classic</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+            </section>
+
+            <h2>Bajalas</h2>
+
+            <section>
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/Gaseosas.png" class="card-img-top" alt="combo classic">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo classic</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+
+                <article class="card" style="width: 40rem;">
+                    <img src="../img/Birra.png" class="card-img-top" alt="combo classic">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo classic</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="./delivery.html" class="btn btn-primary">Pedir</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
        <footer><!-- INICIO FOOTER DE LA PAGINA-->
             <section>
                 <a href="./menu.html">Menu</a>
@@ -91,6 +128,9 @@
                 <p>Copyright © 2022 BurgaQueen Todos los derechos reservados </p>
             </div>       
        </footer><!-- FIN FOOTER DE LA PAGINA-->
+       <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf2371ac17.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

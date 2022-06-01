@@ -12,50 +12,27 @@ body {
     grid-template-rows: auto 1fr auto; 
     min-height: 100vh; 
     margin: 0;
+    
     /*Aplico Gradiente al Body*/
-    background: #dd5e89; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd5e89, #f7bb97); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dd5e89, #f7bb97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
-
-
-    
+    background: #f4c4f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc67fa, #f4c4f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 }
-
 
 
 /*Estilos Header*/
 
-@media (min-width: 560px){
 
-    header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #FFEEDD;
-    font-size: 1.5em;
-        
-}
-
-main section{ 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content:center ;
-
-}
-
-
-} 
 
 nav{
     width: 50%;
+
     
 }
 .listaNav {
     display: flex;
+    margin-right: 40px;
     flex-flow: row wrap;
     justify-content: space-around;
     font-style:normal;
@@ -68,14 +45,45 @@ li {
 }
 ul li a{
     color: black;
+    text-transform: uppercase;
     text-decoration: none;
-    transition: color 0.3s ease;
+    
 }
 li a:hover{
     color: rgb(231, 12, 121);
+    transition: color 0.10s ease;
+    
 }
 
-/*Index section, títulos*/
+.hamburguesa{
+    color: rgb(181, 7, 224);
+    background: none;
+    border: none;
+    font-size:1.5em ;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+
+}
+
+.card{
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 2px rgba(0, 0 , 0, 0.5);
+}
+
+.card:hover{
+    
+    filter: opacity(0.9);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*Index */
 
 main section{ 
     display: flex;
@@ -84,41 +92,57 @@ main section{
 
 }
 
-section h1{
-    color: rgb(231, 12, 121);
-    font-size: 5em;
-    text-align: center; 
-}
-
-
-
-section h2 {
-    display: flex;
-    color: rgb(231, 12, 121);
-    font-size: 3em;
-    
-}
-
-/*video del index*/
-
 
 .bordeRedondeado{
     border-radius: 10px;
 }
-/*tabla del menú*/
+/* main h2{
+    text-align:left;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0 , 0, 0.6);
+    font-size: 3em;
+
+}*/
+
+section article{ 
+    background-color: #fff;
+    margin: 1.5rem;
+    border-radius: 0.1rem;
+    padding: 1.5rem;
+    font-size: 1.5em;
+}
 
 
-.formatoTabla {
-    padding: 100px;
-    font-size: 4em;
-    background-image: url(../img/mae-mu-I7A_pHLcQK8-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+
+/*Estilos Novedades*/
+
+main h1{
+    display: flex;
+    color: rgb(119, 4, 100);
+    font-size: 5em;
     
 }
-.color{
-    color: blanchedalmond;
+
+
+
+main h2 {
+    display: flex;
+    text-align:left;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(119, 4, 100);
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 10px;
+    
 }
+
+.textoEnNovedades{
+    background-color: darkgrey;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
 
 /* Estilos footer*/
 
@@ -162,32 +186,35 @@ footer div {
 
 
 
-.textoEnNovedades{
-    background-color: darkgrey;
-    text-align: center;
-    font-size: 1.5em;
+
+/*Estilo formulario Delivery*/
+
+.row {
+    display: flex;
+    flex-flow: column;
+    margin: 50px;
+   
+}
+
+div img{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Seccion CUPONES*/
+
+.animacionImg {
+    margin: 0 auto;
+    transform: scale(.8);
+    }
+
+.animacionImg:hover{
+    transform: scale(1);
 }
 
 
 
-.formatoForm {
-    margin:20px;
-    padding: 20px 10px 10px 20px;
-    background-color: aliceblue;
-    border-style: outset;
-    border-color: aliceblue;
-}
-/*separo contenido*/
-
-section article{ 
-    background-color: #fff;
-    margin: 1.5rem;
-    border-radius: 0.1rem;
-    padding: 1.5rem;
-    font-size: 1.5em;
-}
-
-/*Grid*/
+/*Grid en Gallery*/
 
 .grid-item {
     display: flex;
@@ -216,6 +243,57 @@ section article{
     padding: 15px;
     grid-auto-flow: dense;
 
+}
+
+
+/*aplico media querie Header*/
+
+@media (min-width: 450px){
+
+    header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #FFEEDD;
+    font-size: 1.5em;
+        
+}
+
+main section{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center ;
+
+}
+
+
+} 
+
+
+@media (max-width: 449px){
+
+header {
+
+
+width: 100%;
+background-color: #FFEEDD;
+font-size: 1.5em;
+        
+}
+
+main section{ 
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center ;
+
+}
+
+.listaNav {
+    flex-direction: column;
+    
+    }
 }
 /*aplico media querie a gallery*/
 @media (min-width: 480px) {
@@ -257,12 +335,3 @@ section article{
     }
 
 }*/
-  /*Aplico Animacion en seccion CUPONES*/
-.animacionImg {
-    margin: 0 auto;
-    transform: scale(.8);
-    }
-
-.animacionImg:hover{
-    transform: scale(1);
-}

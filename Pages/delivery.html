@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/index.css">
+    <!--Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Bootstrap via CDN -->
 </head>
 
 <body>
@@ -27,30 +30,71 @@
         </nav>
     </header> 
  <!--FIN HEADER DE LA PAGINA-->
-    <main>
-        <form class="formatoForm" style="margin: 100px ; width: 600px;" action="./index.js" method="get">
-            <input type="text" name=" Nombre" placeholder=" Nombre" required>
-            <br>
-            <input type="text" name=" Apellido" placeholder=" Apellido" required>
-            <br>
-            <input type="text" name=" Direccion" placeholder=" Direccion" required>
-            <br>
-            <lavel for="menu"> Elegir menú:</lavel>
-    
-            <select id="menu" name="menu">
-                <option value="menu 1"> Menú 1</option>
-                <option value="menu 2"> Menú 2</option>
-                <option value="menu 3"> Menú 3</option>
-            </select>
-            <br>
-            <lavel for="Cantidad"> Cantidad:</lavel>
-            <input type="text" >
-            <br>
-            <lavel for="Enviar pedido"> Enviar pedido</lavel>
-            <input type="submit" value="Enviar pedido">
-        </form>
+    <main class="container">
+        <!--FORMULARIO BOOTSTRAP-->
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Usuario</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="usuario@burgaqueen.com">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputDireccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputDireccion" placeholder="Direccion de entrega">
+            </div>
+
+            <div class="col-md-6">
+              <label for="input" class="form-label"> Entre calles</label>
+              <input type="text" class="form-control" id="input" placeholder="Entre calles">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputProvincia" class="form-label">Provincia</label>
+              <input type="text" class="form-control" id="inputProvincia">
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputCiudad" class="form-label">Ciudad</label>
+              <select id="inputCiudad" class="form-select">
+                <option selected>Seleccionar</option>
+                <option>Quilmes</option>
+                <option>Quilmes</option>
+                <option>Quilmes</option>
+                <option>Quilmes</option>
+                <option>Quilmes</option>
+              </select>
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputCp" class="form-label">C.P</label>
+              <input type="text" class="form-control" id="inputCp">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputMenu" class="form-label">Menú</label>
+                <select id="inputMenu" class="form-select">
+                  <option selected>Seleccionar</option>
+                  <option>Menu 1</option>
+                  <option>Menu 2</option>
+                  <option>Menu 3</option>
+                  <option>Menu 4</option>
+                </select>
+              </div>
+
+            <div class="col-12">
+                <lavel for="Enviar pedido"></lavel>
+                <input type="submit" value="Enviar pedido">
+            </div>
+           
+          </form>
+        <!--FORMULARIO BOOTSTRAP-->
         <div>
-            <img src="../img/Delivery.png" alt="imagen delivery" width="500px">
+            <img src="../img/Delivery.png" class="img-fluid" alt="imagen delivery">
         </div>
 
     </main>
@@ -70,6 +114,8 @@
             <p>Copyright © 2022 BurgaQueen Todos los derechos reservados </p>
         </div>       
     </footer><!-- FIN FOOTER DE LA PAGINA-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 
