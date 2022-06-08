@@ -1,0 +1,83 @@
+/*Estilos Header*/
+
+
+
+nav{
+    width: 50%;
+
+    
+}
+.listaNav {
+    display: flex;
+    margin-right: 40px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-style:normal;
+
+}
+
+li {
+    list-style: none;
+    
+}
+ul li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+li a:hover{
+    color: rgb(231, 12, 121);
+    transition: color 0.10s ease;
+    
+}
+
+
+@media (min-width: 450px){
+
+    header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #FFEEDD;
+    font-size: 1.5em;
+        
+}
+
+main section{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center ;
+
+}
+
+
+} 
+
+
+@media (max-width: 449px){
+
+header {
+
+
+width: 100%;
+background-color: #FFEEDD;
+font-size: 1.5em;
+        
+}
+
+main section{ 
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center ;
+
+}
+
+.listaNav {
+    flex-direction: column;
+    
+    }
+}

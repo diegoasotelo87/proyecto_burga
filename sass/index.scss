@@ -1,0 +1,23 @@
+/* Externos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Misc*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/animations';
+
+/* Partials*/
+@import './partials/footer';
+@import './partials/header';
+
+/* Pages*/
+@import './Pages/cupones';
+@import './Pages/delivery';
+@import './Pages/gallery';
+@import './Pages/home';
+@import './Pages/menu';
+@import './Pages/novedades';
+
+
+
+

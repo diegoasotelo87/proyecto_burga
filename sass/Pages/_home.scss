@@ -1,0 +1,88 @@
+/*Home */
+
+main section{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start ;
+
+}
+
+.bordeRedondeado{
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.seccArticulos{
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.seccArticulos_nov{
+    display: flex;
+    flex-flow: row wrap;    
+
+}
+
+div h2{
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(7, 7, 7);
+    font-size: 4em;   
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Montserrat', sans-serif ;
+    background-color: rgba(231, 221, 221, 0.9);
+    box-shadow: 0 2px 2px rgba(52, 9, 56, 0.4);
+    margin: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    font-size: 1.5em;
+
+    &__img{
+        object-fit: cover;
+        width: 300px;
+        align-items: flex-end;
+        
+    }
+
+    &__titulo{
+        font-size: 1.5rem;
+        color: #2b2b2b;
+    }
+
+    
+   
+    
+}
+
+.seccionLinks{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caja{
+    display: flex; 
+    flex-direction: column;
+    font-family:'Montserrat', sans-serif ;
+    background-color: rgba(231, 221, 221, 0.9);
+    box-shadow: 0 2px 2px rgba(52, 9, 56, 0.4);
+    margin: 1.5rem;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    font-size: 2em;
+
+    &__img{
+        display: flex;
+        justify-content: center;        
+        
+    }
+    
+}

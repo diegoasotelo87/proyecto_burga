@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
-
- 
   },
   "repository": {
     "type": "git",
@@ -22,6 +20,7 @@
   },
   "homepage": "https://github.com/diegoasotelo87/proyecto_burga#readme",
   "devDependencies": {
-    "node": "^17.7.2"
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
   }
 }

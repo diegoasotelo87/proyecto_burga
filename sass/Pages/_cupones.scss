@@ -1,0 +1,13 @@
+/*CUPONES*/
+
+.animacionImg {
+    margin: 0 auto;
+    transform: scale(.8);
+
+    &:hover{
+        transform: scale(1);
+    }
+
+
+    }
+
