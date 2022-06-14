@@ -18,6 +18,11 @@ nav{
 
 li {
     list-style: none;
+    a:hover{
+        color: rgb(231, 12, 121);
+        transition: color 0.10s ease;
+        
+    }
     
 }
 ul li a{
@@ -27,11 +32,7 @@ ul li a{
     
 }
 
-li a:hover{
-    color: rgb(231, 12, 121);
-    transition: color 0.10s ease;
-    
-}
+
 
 
 @media (min-width: 450px){

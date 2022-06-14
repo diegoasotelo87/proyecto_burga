@@ -17,13 +17,14 @@ main section{
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+
+    &_nov{
+        display: flex;
+        flex-flow: row wrap;    
+    
+    }
 }
 
-.seccArticulos_nov{
-    display: flex;
-    flex-flow: row wrap;    
-
-}
 
 div h2{
     padding: 30px;
