@@ -4,7 +4,8 @@
 /* Misc*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: content-box; }
 
 html {
   font-size: 62.5%;
@@ -30,23 +31,40 @@ footer {
   width: 100%;
   background-color: #FFEEDD;
   font-size: 1.5em; }
-  footer section {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
-    align-content: space-around; }
-  footer a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease; }
-  footer section a:hover {
-    color: blueviolet; }
   footer div {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     margin-top: 3rem;
     font-size: 1em; }
+
+.secc_foot {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  align-content: space-between; }
+  .secc_foot a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease; }
+  .secc_foot :hover {
+    color: blueviolet; }
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .buttons a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #FFEEDD;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
 
 /*Estilos Header*/
 nav {
@@ -169,10 +187,13 @@ div h2 {
   color: #070707;
   font-size: 4em; }
 
+/*Mixin*/
 .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-flow;
+  gap: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(231, 221, 221, 0.9);
   box-shadow: 0 2px 2px rgba(52, 9, 56, 0.4);
@@ -183,10 +204,14 @@ div h2 {
   .box__img {
     object-fit: cover;
     width: 300px;
+    height: auto;
     align-items: flex-end; }
-  .box__titulo {
+  .box__titulo, .box__titulo--active {
     font-size: 1.5rem;
-    color: #2b2b2b; }
+    color: #0e0d0d;
+    /*Extend*/ }
+    .box__titulo--active {
+      color: crimson; }
 
 .seccionLinks {
   display: flex;

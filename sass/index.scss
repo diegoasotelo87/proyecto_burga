@@ -3,8 +3,10 @@
 
 /* Misc*/
 @import './misc/variables';
+@import './misc/mixins';
 @import './misc/normalize';
 @import './misc/animations';
+
 
 /* Partials*/
 @import './partials/footer';
@@ -17,6 +19,7 @@
 @import './Pages/home';
 @import './Pages/menu';
 @import './Pages/novedades';
+
 
 
 
